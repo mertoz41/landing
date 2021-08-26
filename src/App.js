@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
-
+import ReactPageScroller from 'react-page-scroller';
+import First from './components/first'
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-         YEAAAA BOIIIIIII
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+      <ReactPageScroller
+          // pageOnChange={this.handlePageChange}
+          // onBeforePageScroll={this.handleBeforePageChange}
+          // customPageNumber={this.state.currentPage}
         >
-          Learn React
-        </a>
-      </header>
+          <First />
+          {/* <FirstComponent />
+          <SecondComponent />
+          <ThirdComponent />
+          <FourthComponent />
+          <FifthComponent /> */}
+        </ReactPageScroller>
     </div>
   );
 }
