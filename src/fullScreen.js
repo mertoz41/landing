@@ -1,9 +1,12 @@
 import React, {Component} from 'react'
 import ReactPageScroller from 'react-page-scroller';
 import First from './components/first'
-import Second from './components/second'
+import What from './components/what'
+import Why from './components/why'
 import Last from './components/last'
 import './App.css'
+import { BsFillCaretDownFill } from "react-icons/bs";
+
 class FullScreen extends Component{
 
     constructor(props){
@@ -12,12 +15,13 @@ class FullScreen extends Component{
     }
 
     handlePageChange = number => {
-        this.setState({ currentPage: number });
+        this.setState({currentPage: number});
     };
 
     handleBeforePageChange = number => {
         console.log(number);
     };
+    
     render(){
         return(
             <div className='container'>
@@ -26,10 +30,16 @@ class FullScreen extends Component{
                 onBeforePageScroll={this.handleBeforePageChange}
                 customPageNumber={this.state.currentPage}
                 >
-                    <First/>
-                    <Second />
+                    <First handlePageChange={this.handlePageChange}/>
+                    <What handlePageChange={this.handlePageChange}/>
+                    <Why handlePageChange={this.handlePageChange}/>
                     <Last/>
                 </ReactPageScroller>
+                <div className='experiment' onClick={() => this.handlePageChange(this.state.currentPage + 1)}>
+                    <BsFillCaretDownFill size='3em' />
+                {/* <button >NEXT</button> */}
+
+            </div>
             </div>
         )
     }
