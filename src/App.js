@@ -1,21 +1,19 @@
 import './App.css';
-import ReactPageScroller from 'react-page-scroller';
+
 import First from './components/first'
+
+import FullScreen from './fullScreen';
 function App() {
+
+
+
+
+
   return (
-    <div className="App">
-      <ReactPageScroller
-          // pageOnChange={this.handlePageChange}
-          // onBeforePageScroll={this.handleBeforePageChange}
-          // customPageNumber={this.state.currentPage}
-        >
-          <First />
-          {/* <FirstComponent />
-          <SecondComponent />
-          <ThirdComponent />
-          <FourthComponent />
-          <FifthComponent /> */}
-        </ReactPageScroller>
+    <div >
+      {/* <First /> */}
+      <FullScreen />
+      
     </div>
   );
 }
