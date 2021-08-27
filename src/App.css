@@ -1,0 +1,20 @@
+.first{
+    background-color: red;
+}
+.container{
+    height: 100vh;
+    width: auto;
+    background-color: silver;
+}
+.logobox{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.logo{
+    height: 200px;
+    width: auto;
+}

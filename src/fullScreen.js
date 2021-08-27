@@ -2,6 +2,8 @@ import React, {Component} from 'react'
 import ReactPageScroller from 'react-page-scroller';
 import First from './components/first'
 import Second from './components/second'
+import Last from './components/last'
+import './App.css'
 class FullScreen extends Component{
 
     constructor(props){
@@ -10,7 +12,6 @@ class FullScreen extends Component{
     }
 
     handlePageChange = number => {
-        console.log(number)
         this.setState({ currentPage: number });
     };
 
@@ -19,25 +20,18 @@ class FullScreen extends Component{
     };
     render(){
         return(
-            <div>
-                {/* <p>experimenting only</p> */}
+            <div className='container'>
                 <ReactPageScroller
-          pageOnChange={this.handlePageChange}
-          onBeforePageScroll={this.handleBeforePageChange}
-          customPageNumber={this.state.currentPage}
-        >
-            <First/>
-            <Second />
-          {/* <FirstComponent />
-          <SecondComponent />
-          <ThirdComponent />
-          <FourthComponent />
-          <FifthComponent /> */}
-        </ReactPageScroller>
+                pageOnChange={this.handlePageChange}
+                onBeforePageScroll={this.handleBeforePageChange}
+                customPageNumber={this.state.currentPage}
+                >
+                    <First/>
+                    <Second />
+                    <Last/>
+                </ReactPageScroller>
             </div>
         )
     }
 }
-
-
 export default FullScreen
