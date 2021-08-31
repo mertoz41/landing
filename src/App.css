@@ -4,14 +4,32 @@
 .container{
     height: 100vh;
     width: auto;
-    background-color: silver;
+    background-color: #2e2e2e;
 }
 .logobox{
     display: flex;
     justify-content: center;
 }
+.formbox{
+    height: auto;
+    width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    background-color: #9370DB;
+}
 .coloredfont{
-    color: #00fa9a
+    color: #9370DB
+}
+.regularfont{
+    color: white;
+}
+.waitlistbutton{
+    background-color: #9370DB;
+    border-radius: 25px;
+
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .downbutton{
     position: relative;

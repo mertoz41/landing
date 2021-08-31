@@ -6,6 +6,8 @@ import {
   Route,
 } from "react-router-dom";
 import Waitlist from './components/waitlist'
+import 'semantic-ui-css/semantic.min.css'
+
 function App() {
 
   return (

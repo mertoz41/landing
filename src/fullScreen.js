@@ -36,7 +36,7 @@ class FullScreen extends Component{
                     <Last/>
                 </ReactPageScroller>
                 <div className='experiment' onClick={() => this.handlePageChange(this.state.currentPage + 1)}>
-                    <BsFillCaretDownFill size='3em' />
+                    <BsFillCaretDownFill size='3em' className="coloredfont"/>
                 {/* <button >NEXT</button> */}
 
             </div>
