@@ -3,8 +3,9 @@
 }
 .container{
     height: 100vh;
-    width: auto;
+    width: 100vw;
     background-color: #2e2e2e;
+    justify-content: center;
 }
 .logobox{
     display: flex;
@@ -45,6 +46,12 @@
     width: 50px;
     align-items: center;
     /* background-color: red; */
+}
+.title{
+    color: #9370DB;
+    text-align: center;
+    margin: auto;
+    height: 20px;
 }
 
 

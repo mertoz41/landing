@@ -25,7 +25,8 @@ class FullScreen extends Component{
     render(){
         return(
             <div className='container'>
-                <ReactPageScroller
+                <p>Something cool is coming soon...</p>
+                {/* <ReactPageScroller
                 pageOnChange={this.handlePageChange}
                 onBeforePageScroll={this.handleBeforePageChange}
                 customPageNumber={this.state.currentPage}
@@ -34,12 +35,11 @@ class FullScreen extends Component{
                     <What handlePageChange={this.handlePageChange}/>
                     <Why handlePageChange={this.handlePageChange}/>
                     <Last/>
-                </ReactPageScroller>
-                <div className='experiment' onClick={() => this.handlePageChange(this.state.currentPage + 1)}>
+                </ReactPageScroller> */}
+                {/* <div className='experiment' onClick={() => this.handlePageChange(this.state.currentPage + 1)}>
                     <BsFillCaretDownFill size='3em' className="coloredfont"/>
-                {/* <button >NEXT</button> */}
 
-            </div>
+            </div> */}
             </div>
         )
     }

@@ -9,7 +9,8 @@ const What = ({handlePageChange}) => {
                 <h1 className="regularfont">?</h1>
             </div>
             <div className="logobox">
-                <h4 className="regularfont">Cezs is a music platform designed for instrumentalists to share their talents .</h4>
+                {/* <h4>Cezs is a music platform designed for instrumentalists.</h4> */}
+                <h3 className="regularfont">Cezs is a social networking service, combined with a music library that is designed for instrumentalists. </h3>
             </div>
             
             <div className="logobox">

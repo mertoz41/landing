@@ -6,20 +6,25 @@ import {
   Route,
 } from "react-router-dom";
 import Waitlist from './components/waitlist'
-import 'semantic-ui-css/semantic.min.css'
+// import 'semantic-ui-css/semantic.min.css'
 
 function App() {
 
   return (
-    <Router>
-      <Switch>
-        <Route exact path="/" render={() => <FullScreen/>}/>
+    <div className='container'>
+      {/* <div className="formbox"> */}
+        <h1 className="title">Something cool coming soon...</h1>
+      {/* </div> */}
+    </div>
+    // <Router>
+    //   <Switch>
+    //     <Route exact path="/" render={() => <FullScreen/>}/>
   
-        <Route exact path="/signup" render={() => <Waitlist/>}/>
+    //     <Route exact path="/signup" render={() => <Waitlist/>}/>
           
         
-      </Switch>
-    </Router>
+    //   </Switch>
+    // </Router>
   );
 }
 
