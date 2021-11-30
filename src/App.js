@@ -7,12 +7,20 @@ import {
   Route,
 } from "react-router-dom";
 import Waitlist from './components/waitlist'
+import { Helmet } from 'react-helmet'
+
 // import 'semantic-ui-css/semantic.min.css'
 
 function App() {
 
   return (
     <div className='container'>
+      <Helmet>
+          <meta charSet="utf-8" />
+          <title>Cezs Music</title>
+          <meta name="description" content="Nested component" />
+          <link rel='icon' type='image/png' href='favicon.ico' sizes="16x16" />
+        </Helmet>
       
        <Router>
        <Switch>
