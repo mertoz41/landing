@@ -27,7 +27,10 @@ class FullScreen extends Component{
         return(
             <div className='container'>
                 <div className='logobox'>
-                    <img src={Logo} className='logo' alt='logo'/>
+                    <div style={{marginTop: 20}}>
+                        <img src={Logo} className='logo' alt='logo'/>
+
+                    </div>
                 </div>
                 <div className="logobox">
                     <div>

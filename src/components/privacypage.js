@@ -8,7 +8,10 @@ class PrivacyPage extends Component{
         return(
             <div className="privacycontainer">
                 <div className='logobox'>
-                    <img src={Logo} className='logo' alt='logo'/>
+                    <div style={{marginTop: 20}}>
+                        <img src={Logo} className='logo' alt='logo'/>
+
+                    </div>
                 </div>
                 <div className="logobox">
                     <div className='privacybox'>
