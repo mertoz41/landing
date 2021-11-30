@@ -5,6 +5,7 @@ import What from './components/what'
 import Why from './components/why'
 import Last from './components/last'
 import './App.css'
+import Logo from './pics/cezslogo.png'
 import { BsFillCaretDownFill } from "react-icons/bs";
 
 class FullScreen extends Component{
@@ -25,7 +26,17 @@ class FullScreen extends Component{
     render(){
         return(
             <div className='container'>
-                <p>Something cool is coming soon...</p>
+                <div className='logobox'>
+                    <img src={Logo} className='logo' alt='logo'/>
+                </div>
+                <div className="logobox">
+                    <div>
+                        <h2 className="title">Coming soon...</h2>
+                        <h1 className="title">Social network for instrumentalists.</h1>
+                    </div>
+                </div>
+
+                {/* <p>Something cool is coming soon...</p> */}
                 {/* <ReactPageScroller
                 pageOnChange={this.handlePageChange}
                 onBeforePageScroll={this.handleBeforePageChange}

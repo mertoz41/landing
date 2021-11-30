@@ -7,9 +7,29 @@
     background-color: #2e2e2e;
     justify-content: center;
 }
+.privacycontainer{
+    height: auto;
+    background-color: #2e2e2e;
+    justify-content: center;
+    width: 100vw;
+}
 .logobox{
     display: flex;
     justify-content: center;
+}
+
+.privacybox{
+    height: auto;
+    width: 60%;
+    padding: 10px;
+    
+    /* background-color: rosybrown; */
+}
+.privacytitle{
+    color: #9370DB;
+}
+.privacywritings{
+    color: white
 }
 .formbox{
     height: auto;

@@ -1,5 +1,6 @@
 import './App.css';
 import FullScreen from './fullScreen';
+import PrivacyPage from './components/privacypage';
 import {
   BrowserRouter as Router,
   Switch,
@@ -12,19 +13,18 @@ function App() {
 
   return (
     <div className='container'>
-      {/* <div className="formbox"> */}
-        <h1 className="title">Something cool coming soon...</h1>
-      {/* </div> */}
-    </div>
-    // <Router>
-    //   <Switch>
-    //     <Route exact path="/" render={() => <FullScreen/>}/>
+      
+       <Router>
+       <Switch>
+         <Route exact path="/" render={() => <FullScreen/>}/>
   
-    //     <Route exact path="/signup" render={() => <Waitlist/>}/>
-          
+         <Route exact path="/signup" render={() => <Waitlist/>}/>
+          <Route exact path='/privacy' render={() => <PrivacyPage/>} />
         
-    //   </Switch>
-    // </Router>
+       </Switch>
+     </Router>
+    </div>
+    
   );
 }
 
