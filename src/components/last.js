@@ -7,9 +7,10 @@ const Last = ({history}) => {
     // console.log(history)
     // const history = useNavigate()
     return(
-        <div>
-            <h4>EXPERIMENTING THAT WAITLIST BUTTON</h4>
-            <button onClick={() => history.push('/signup')}>to waitlist</button>
+        <div className="container">
+            <div className="logobox">
+                <h4 className="regularfont">If you are interested in joining our community, you can join the <span className="linkword" onClick={() => history.push('/waitlist')}>waitlist</span>!</h4>
+            </div>
         </div>
     )
 }

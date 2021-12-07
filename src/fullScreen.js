@@ -4,6 +4,8 @@ import First from './components/first'
 import What from './components/what'
 import Why from './components/why'
 import Last from './components/last'
+import How from './components/how'
+import Logo from './pics/cezslogo.png'
 import './App.css'
 
 class FullScreen extends Component{
@@ -24,9 +26,22 @@ class FullScreen extends Component{
     render(){
         return(
             <div className='container'>
-                
+                <div>
+            <div className='logobox'>
+                    <div style={{marginTop: 20}}>
+                        <img src={Logo} className='logo' alt='logo'/>
 
-                <ReactPageScroller
+                    </div>
+                </div>
+                <div className="logobox">
+                    <div>
+                        <h1 className="title">Music platform for instrumentalists.</h1>
+                        <h2 className="title">Coming soon...</h2>
+                    </div>
+                </div>
+                </div>
+
+                {/* <ReactPageScroller
                 pageOnChange={this.handlePageChange}
                 onBeforePageScroll={this.handleBeforePageChange}
                 customPageNumber={this.state.currentPage}
@@ -34,8 +49,11 @@ class FullScreen extends Component{
                     <First handlePageChange={this.handlePageChange} currentPage={this.state.currentPage}/>
                     <What handlePageChange={this.handlePageChange} currentPage={this.state.currentPage}/>
                     <Why handlePageChange={this.handlePageChange} currentPage={this.state.currentPage}/>
+                    <How handlePageChange={this.handlePageChange} currentPage={this.state.currentPage}/>
+
+
                     <Last/>
-                </ReactPageScroller>
+                </ReactPageScroller> */}
                 
             </div>
         )

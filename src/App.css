@@ -115,3 +115,8 @@
     height: 30%;
     width: auto;
 }
+
+.linkword{
+    color: #9370DB;
+    text-decoration: underline;
+}
