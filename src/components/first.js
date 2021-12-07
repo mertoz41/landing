@@ -1,30 +1,44 @@
 import React from 'react'
 import '../App.css'
-import Logo from '../pics/2021_CEZS-Logo.png'
+import Logo from '../pics/cezslogo.png'
 import { withRouter } from "react-router-dom";
-const FirstPage = ({history, handlePageChange}) => {
+import { BsFillCaretDownFill } from "react-icons/bs";
+
+const FirstPage = ({history, handlePageChange, currentPage}) => {
     return(
         <div className='container'>
+            <div>
             <div className='logobox'>
-                <img src={Logo} className='logo' alt='logo'/>
-            </div>
-            <div className='logobox'>
-                <h1 className='coloredfont'>Music{' '}</h1>
-                
-                <h1 className='regularfont'>&nbsp;from</h1>
-                <h1 className="coloredfont">&nbsp;music</h1>
-                <h1 className="regularfont">ians.</h1>
-            </div>
-            <div className="logobox">
-                <div className="waitlistbutton" onClick={() => history.push('/signup')}>
-                    <h4>Join Waitlist</h4>
+                    <div style={{marginTop: 20}}>
+                        <img src={Logo} className='logo' alt='logo'/>
+
+                    </div>
+                </div>
+                <div className="logobox">
+                    <div>
+                        <h1 className="title">Music platform for instrumentalists.</h1>
+                        <h2 className="title">Coming soon...</h2>
+                    </div>
+                </div>
                 </div>
 
-            </div>
-            <div className="logobox">
-                <h4 className="regularfont">Swipe down to learn more.</h4>
+                <div className="buttonbox">
+                <div className="waitlistbutton" onClick={() => history.push('/waitlist')}>
+                    <h4>Join Waitlist</h4>
+                </div>
                 
+    
+
             </div>
+            <div className="buttonbox">
+
+                <div className='nextpage' onClick={() => handlePageChange(currentPage + 1)}>
+                <h4 className="regularfont">Click the arrows or swipe down to learn more.</h4>
+                    <BsFillCaretDownFill size='3em' className="downbutton"/>
+
+                </div>
+                </div>
+        
         </div>
     )
 }

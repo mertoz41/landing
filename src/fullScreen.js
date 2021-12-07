@@ -5,8 +5,6 @@ import What from './components/what'
 import Why from './components/why'
 import Last from './components/last'
 import './App.css'
-import Logo from './pics/cezslogo.png'
-import { BsFillCaretDownFill } from "react-icons/bs";
 
 class FullScreen extends Component{
 
@@ -26,34 +24,19 @@ class FullScreen extends Component{
     render(){
         return(
             <div className='container'>
-                <div className='logobox'>
-                    <div style={{marginTop: 20}}>
-                        <img src={Logo} className='logo' alt='logo'/>
+                
 
-                    </div>
-                </div>
-                <div className="logobox">
-                    <div>
-                        <h2 className="title">Coming soon...</h2>
-                        <h1 className="title">Social network for instrumentalists.</h1>
-                    </div>
-                </div>
-
-                {/* <p>Something cool is coming soon...</p> */}
-                {/* <ReactPageScroller
+                <ReactPageScroller
                 pageOnChange={this.handlePageChange}
                 onBeforePageScroll={this.handleBeforePageChange}
                 customPageNumber={this.state.currentPage}
                 >
-                    <First handlePageChange={this.handlePageChange}/>
-                    <What handlePageChange={this.handlePageChange}/>
-                    <Why handlePageChange={this.handlePageChange}/>
+                    <First handlePageChange={this.handlePageChange} currentPage={this.state.currentPage}/>
+                    <What handlePageChange={this.handlePageChange} currentPage={this.state.currentPage}/>
+                    <Why handlePageChange={this.handlePageChange} currentPage={this.state.currentPage}/>
                     <Last/>
-                </ReactPageScroller> */}
-                {/* <div className='experiment' onClick={() => this.handlePageChange(this.state.currentPage + 1)}>
-                    <BsFillCaretDownFill size='3em' className="coloredfont"/>
-
-            </div> */}
+                </ReactPageScroller>
+                
             </div>
         )
     }

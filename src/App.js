@@ -26,7 +26,7 @@ function App() {
        <Switch>
          <Route exact path="/" render={() => <FullScreen/>}/>
   
-         <Route exact path="/signup" render={() => <Waitlist/>}/>
+         <Route exact path="/waitlist" render={() => <Waitlist/>}/>
           <Route exact path='/privacy' render={() => <PrivacyPage/>} />
         
        </Switch>

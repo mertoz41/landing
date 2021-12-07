@@ -5,7 +5,9 @@
     height: 100vh;
     width: 100vw;
     background-color: #2e2e2e;
-    justify-content: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
 }
 .privacycontainer{
     height: auto;
@@ -16,6 +18,11 @@
 .logobox{
     display: flex;
     justify-content: center;
+    
+}
+.buttonbox{
+  display: flex;
+  justify-content: center;
 }
 
 .privacybox{
@@ -36,43 +43,66 @@
     height: auto;
     width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-    background-color: #9370DB;
+    /* background-color: #9370DB; */
+}
+.formbox input{
+    background-color: darkgray;
+    border: 0px ;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    font-size: large;
+}
+.formbox textarea{
+    background-color: darkgray;
+    border: 0px ;
+    padding: 15px;
+    font-size: large;
+    margin-bottom: 10px;
+
+    border-radius: 20px;
 }
 .coloredfont{
-    color: #9370DB
+    color: #9370DB;
+    text-align: center;
 }
+
 .regularfont{
     color: white;
 }
 .waitlistbutton{
     background-color: #9370DB;
-    border-radius: 25px;
+    border-radius: 20px;
 
     padding-left: 10px;
     padding-right: 10px;
+    align-items: center;
+}
+.waitlistbutton h4{
+    text-align: center;
 }
 .downbutton{
-    position: relative;
-    right: 20px;
+    /* position: relative;
+    right: 20px; */
+    color: #9370DB;
+    
     /* top: 80px; */
-    bottom: 290px
+    /* bottom: 290px */
 }
-.experiment{
-    position: absolute;
-    right: 10px;
-    bottom: 20px;
-    height: 50px;
-    width: 50px;
+.nextpage{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    /* background-color: red; */
 }
 .title{
     color: #9370DB;
     text-align: center;
     margin: auto;
-    height: 20px;
+    /* height: 20px; */
 }
 
 
@@ -80,4 +110,8 @@
 .logo{
     height: 100%;
     width: 100%;
+}
+.waitlistlogo{
+    height: 30%;
+    width: auto;
 }
