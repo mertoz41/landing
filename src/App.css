@@ -25,6 +25,32 @@
   justify-content: center;
 }
 
+
+
+
+.sectionside{
+    flex: 1;
+    /* background-color: red; */
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    
+}
+.sections{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+}
+
+
+
+
+
+
+
+
+
+
 .privacybox{
     height: auto;
     width: 80%;
@@ -69,9 +95,19 @@
     color: #9370DB;
     text-align: center;
 }
-
+.cezswriting{
+    height: 50px;
+    margin-right: 5px;
+}
 .regularfont{
     color: white;
+    font-size: x-large;
+    margin: 10px;
+    /* padding: 5px; */
+    /* background-color: red; 
+    */
+    /* text-align: center; */
+    width: 70%;
 }
 .waitlistbutton{
     background-color: #9370DB;
