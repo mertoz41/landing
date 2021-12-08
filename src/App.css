@@ -113,11 +113,15 @@
     font-size: x-large;
     margin: 10px;
     padding: 10px; 
-    /* border-radius: 20px; */
     background-color: #2e2e2e; 
-    /* box-shadow: 0px 0px 15px 5px darkgray; */
-
-    /* text-align: center; */
+    width: 70%;
+}
+.grayregularfont{
+    color: white;
+    font-size: x-large;
+    margin: 10px;
+    padding: 10px; 
+    background-color: black; 
     width: 70%;
 }
 .waitlistbutton{

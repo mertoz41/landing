@@ -9,7 +9,7 @@ const Last = ({history}) => {
     return(
         <div className="container">
             <div className="logobox">
-                <h4 className="regularfont">If you are interested in joining our community, you can join the <span className="linkword" onClick={() => history.push('/waitlist')}>waitlist</span>!</h4>
+                <h4 className="regularfont">If you are interested in joining our community, join the <span className="linkword" onClick={() => history.push('/waitlist')}>waitlist</span>!</h4>
             </div>
         </div>
     )

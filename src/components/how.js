@@ -8,12 +8,12 @@ const How = ({currentPage, handlePageChange}) => {
             <div className="logobox">
                 <h1>How is Cezs?</h1>
             </div>
-            <p>
+            <h3 className="grayregularfont">
                
 
 
                 YWhile Cezs simplifies sharing music, video content delivers more authenticity from musicians. 
-                More importantly, Cezs brings a new way of listening and discovering music through covers by opening its doors to everyone to listen to their favorite songs from Cezs musicians.</p>
+                More importantly, Cezs brings a new way of listening and discovering music through covers by opening its doors to everyone to listen to their favorite songs from Cezs musicians.</h3>
                 <div className='nextpage' onClick={() => handlePageChange(currentPage + 1)}>
                 <BsFillCaretDownFill size='3em' className="downbutton"/>
             </div>

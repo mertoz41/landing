@@ -13,14 +13,14 @@ const What = ({handlePageChange, currentPage}) => {
                         
                         <h3 className="regularfont">
                             <img src={Logo} alt='logo' className="cezswriting"/>
-                            is a social network where users make up the library with instrument videos, pinpoint upcoming events, and connect with others through music.
+                            is a social network combined with a community-built music library.
                         </h3>
                         <h3 className="regularfont">
                         WHILE COVER VIDEOS APPEAR IN RESPECTIVE SONG, ALBUM, AND ARTIST PAGES, ORIGINAL CONTENT IS DISCOVERED BY INSTRUMENT, GENRE, OR LOCATION.
 
                         </h3>
                         <h3 className="regularfont">
-                        DISCOVER SECTION ALLOWS USERS TO DISCOVER MUSICIANS ON THE MAP, PINPOINT UPCOMING GIGS OR AUDITIONS. 
+                        Discover section allows users to pinpoint their upcoming gigs or auditions on the map. 
 
                         </h3>
                     </div>
