@@ -13,16 +13,15 @@ const What = ({handlePageChange, currentPage}) => {
                         
                         <h3 className="regularfont">
                             <img src={Logo} alt='logo' className="cezswriting"/>
-                            is a social network combined with a community-built music library.
+                            is a social network wrapped around a music library of your favorite songs, composed by <span className="coloredfont">instrumentalists</span>.
                         </h3>
-                        <h3 className="regularfont">
-                        WHILE COVER VIDEOS APPEAR IN RESPECTIVE SONG, ALBUM, AND ARTIST PAGES, ORIGINAL CONTENT IS DISCOVERED BY INSTRUMENT, GENRE, OR LOCATION.
-
-                        </h3>
-                        <h3 className="regularfont">
+                        {/* <h3 className="regularfont">
+                            Listen to your favorite songs from our talented musicians, or discover 
+                        </h3> */}
+                        {/* <h3 className="regularfont">
                         Discover section allows users to pinpoint their upcoming gigs or auditions on the map. 
 
-                        </h3>
+                        </h3> */}
                     </div>
                 </div>
                 <div className="sectionside">
@@ -31,6 +30,7 @@ const What = ({handlePageChange, currentPage}) => {
         
             </div>
             <div className='nextpage' onClick={() => handlePageChange(currentPage + 1)}>
+                <h3 className="introfont">problem</h3>
                 <BsFillCaretDownFill size='3em' className="downbutton"/>
             </div>
         </div>

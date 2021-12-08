@@ -33,7 +33,7 @@ const FirstPage = ({history, handlePageChange, currentPage}) => {
             <div className="buttonbox">
 
                 <div className='nextpage' onClick={() => handlePageChange(currentPage + 1)}>
-                <h4 className="regularfont">Click the arrows or swipe down to learn more.</h4>
+                <h4 className="introfont">Click the arrows or swipe down to learn more.</h4>
                     <BsFillCaretDownFill size='3em' className="downbutton"/>
 
                 </div>
