@@ -3,13 +3,14 @@ import '../App.css'
 import { BsFillCaretDownFill } from "react-icons/bs";
 import Logo from '../pics/cezslogo.png'
 import OmerSs from '../pics/IMG_6485.PNG'
+import First from '../pics/omersong.gif'
 const What = ({handlePageChange, currentPage}) => {
     return(
-        <div className="container">
+        <div className="secondcontainer">
             <div className='sections'>
                 <div className="sectionside">
                     <div className="formbox">
-
+                        
                         <h3 className="regularfont">
                             <img src={Logo} alt='logo' className="cezswriting"/>
                             is a social network where users make up the library with instrument videos, pinpoint upcoming events, and connect with others through music.
@@ -25,7 +26,7 @@ const What = ({handlePageChange, currentPage}) => {
                     </div>
                 </div>
                 <div className="sectionside">
-                    <img src={OmerSs} alt='omerss' style={{height: 500, justifyContent: 'center'}}/>
+                    <img src={First} alt='omerss' style={{height: 600, justifyContent: 'center'}}/>
                 </div>
         
             </div>
