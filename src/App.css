@@ -9,6 +9,14 @@
     display: flex;
     flex-direction: column;
 }
+.alternateContainer{
+    height: 100vh;
+    width: 100vw;
+    background-color: #2e2e2e;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+}
 .secondcontainer{
     height: 100vh;
     width: 100vw;
@@ -16,6 +24,10 @@
     justify-content: space-between;
     display: flex;
     flex-direction: column;
+}
+.sectionTitle{
+    background-color: #9370DB;
+
 }
 .privacycontainer{
     height: auto;

@@ -11,9 +11,14 @@ const How = ({currentPage, handlePageChange}) => {
                     <div className="formbox">
                     <h3 className="regularfont">
                 <img src={Logo} alt='logo' className="cezswriting"/>
-                simplifies sharing music with video content, which delivers more authenticity from musicians.
+                simplifies sharing music with video content, which delivers more authenticity from <span className='coloredfont'>instrumentalists</span>, while introducing a new way to listen to <span className="coloredfont">music</span>, and connect with others.
 
-provides an exclusive music platform 
+                {/* with video content,
+                
+                
+                 which delivers more authenticity from musicians.
+        while the library , the maps allows users to discover each other by location, and pinpoint upcoming events on the map.
+provides an exclusive music platform  */}
 
                     {/* simplifies sharing music with video content, which delivers more authenticity from musicians. */}
                     {/* while providing an exclusive platform for <span className="coloredfont">anyone</span> to express themselves through music. */}
@@ -21,11 +26,11 @@ provides an exclusive music platform
 
                      {/* which delivers more authenticity. */}
                 </h3>
-                <h3 className="regularfont">
-                    Cezs allows users to 
+                {/* <h3 className="regularfont"> */}
+                {/* While video content delivers more authenticity, the map allows users to discover others by location and pinpoint upcoming events. */}
                     {/* aside in the library, discover section allows users to pinpoint upcoming  */}
                 {/* Cezs facilitates a new way to listen to music through covers and opening its doors to everyone to listen to their favorite songs from Cezs musicians and discover events. */}
-                    </h3>
+                    {/* </h3> */}
                     </div>
                 </div>
                 <div className="sectionside">
