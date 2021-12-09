@@ -3,7 +3,7 @@ import '../App.css'
 import { BsFillCaretDownFill } from "react-icons/bs";
 import Logo from '../pics/cezslogo.png'
 import OmerSs from '../pics/IMG_6485.PNG'
-import First from '../pics/omersong.gif'
+import First from '../pics/goodv.gif'
 const What = ({handlePageChange, currentPage}) => {
     return(
         <div className="secondcontainer">
@@ -13,7 +13,7 @@ const What = ({handlePageChange, currentPage}) => {
                         
                         <h3 className="regularfont">
                             <img src={Logo} alt='logo' className="cezswriting"/>
-                            is a social network wrapped around a music library of your favorite songs, composed by <span className="coloredfont">instrumentalists</span>.
+                            is a social network wrapped around a library of your favorite songs, played by <span className="coloredfont">instrumentalists</span>.
                         </h3>
                         {/* <h3 className="regularfont">
                             Listen to your favorite songs from our talented musicians, or discover 
