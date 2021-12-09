@@ -86,6 +86,25 @@
 .privacywritings{
     color: white
 }
+.footer{
+    background-color: #9370DB;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.footer div{
+    flex: 1;
+    /* background-color: yellow; */
+    /* text-align: center; */
+}
+.footer h5{
+    color: black;
+}
+.footerlogo{
+    height: 40px;
+    align-self: center;
+}
 .formbox{
     height: auto;
     width: 100%;
@@ -145,16 +164,32 @@
     background-color: black; 
     width: 70%;
 }
+.lastFont{
+    color: white;
+    font-size: x-large;
+    margin: 10px;
+    padding: 10px; 
+    /* background-color: black;  */
+    /* width: 70%; */
+}
+.lastsmallfont{
+    color: white;
+    font-size: large;
+    margin: 10px;
+    padding: 10px; 
+    /* background-color: black */
+}
 .waitlistbutton{
     background-color: #9370DB;
-    border-radius: 20px;
+    /* border-radius: 20px; */
 
     padding-left: 10px;
     padding-right: 10px;
     align-items: center;
 }
-.waitlistbutton h4{
+.waitlistbutton h3{
     text-align: center;
+    color: white;
 }
 .downbutton{
     /* position: relative;

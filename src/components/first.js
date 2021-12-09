@@ -24,7 +24,7 @@ const FirstPage = ({history, handlePageChange, currentPage}) => {
 
                 <div className="buttonbox">
                 <div className="waitlistbutton" onClick={() => history.push('/waitlist')}>
-                    <h4>Join Waitlist</h4>
+                    <h3>Join Waitlist</h3>
                 </div>
                 
     
