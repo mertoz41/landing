@@ -7,7 +7,6 @@ import { BsFillCaretDownFill } from "react-icons/bs";
 const FirstPage = ({history, handlePageChange, currentPage}) => {
     return(
         <div className='container'>
-            <div>
             <div className='logobox'>
                     <div style={{marginTop: 20}}>
                         <img src={Logo} className='logo' alt='logo'/>
@@ -16,13 +15,11 @@ const FirstPage = ({history, handlePageChange, currentPage}) => {
                 </div>
                 <div className="logobox">
                     <div>
-                        <h1 className="title">Music platform for instrumentalists.</h1>
+                        <h1 className="title"><span className='coloredfont'>Music</span> platform for <span className='coloredfont'>instrumentalists</span>.</h1>
                         <h2 className="title">Coming soon...</h2>
                     </div>
                 </div>
-                </div>
-
-                <div className="buttonbox">
+                        <div className="buttonbox">
                 <div className="waitlistbutton" onClick={() => history.push('/waitlist')}>
                     <h3>Join Waitlist</h3>
                 </div>
@@ -30,6 +27,8 @@ const FirstPage = ({history, handlePageChange, currentPage}) => {
     
 
             </div>
+
+                
             <div className="buttonbox">
 
                 <div className='nextpage' onClick={() => handlePageChange(currentPage + 1)}>

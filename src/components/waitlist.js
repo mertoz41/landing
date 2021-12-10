@@ -27,16 +27,22 @@ class Waitlist extends Component{
     }
     render(){
         return(
-            <div className="container">
+            <div className="waitlistcontainer">
+                <div>
                 <div className='logobox'>
-                    <div style={{marginTop: 20}} >
+                    <div style={{marginTop: 20, display: 'flex', justifyContent: 'center'}}>
                         <img src={Logo} className='waitlistlogo' alt='logo' onClick={() => this.props.history.push('/')}/>
-                    <h1 className="coloredfont">Join waitlist</h1>
+                        </div>
+                </div>
                     {this.state.joinedWaitlist ? 
                         <div className='logobox'>
                         <h3 className="coloredfont">You have joined the waitlist! Expect to hear from us soon!</h3>
+                        <div>
+                            </div>
                         </div>
                     : 
+                    <div>
+                        <h1 className="coloredfont">Join waitlist</h1>
                     <form ref={this.form} onSubmit={e => this.checkAttempt(e)} className="formbox">
                         <div>
                             <input type="text" name="name" placeholder="Your name" value={this.state.name} onChange={text=> this.setState({name: text.target.value})}/>
@@ -49,9 +55,10 @@ class Waitlist extends Component{
                             </div>
                         <input type="submit" value="Join"/>
                     </form>
+                    </div>
                     }
                     </div>
-                </div>
+                
 
                
                 

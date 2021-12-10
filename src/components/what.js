@@ -2,8 +2,7 @@ import React from 'react'
 import '../App.css'
 import { BsFillCaretDownFill } from "react-icons/bs";
 import Logo from '../pics/cezslogo.png'
-import OmerSs from '../pics/IMG_6485.PNG'
-import First from '../pics/goodv.gif'
+import First from '../pics/first.gif'
 const What = ({handlePageChange, currentPage}) => {
     return(
         <div className="secondcontainer">
@@ -28,7 +27,7 @@ const What = ({handlePageChange, currentPage}) => {
                     </div>
                 </div>
                 <div className="sectionside">
-                    <img src={First} alt='omerss' style={{height: 600, justifyContent: 'center'}}/>
+                    <img src={First} alt='omerss' className='gif' />
                 </div>
         
             </div>

@@ -9,6 +9,14 @@
     display: flex;
     flex-direction: column;
 }
+.waitlistcontainer{
+    height: 100vh;
+    width: 100vw;
+    background-color: #2e2e2e;
+    /* justify-content: space-between; */
+    display: flex;
+    flex-direction: column;
+}
 .alternateContainer{
     height: 100vh;
     width: 100vw;
@@ -99,7 +107,7 @@
     /* text-align: center; */
 }
 .footer h5{
-    color: black;
+    color: #9370DB;
 }
 .footerlogo{
     height: 40px;
@@ -119,7 +127,8 @@
     border: 0px ;
     padding: 15px;
     margin-bottom: 20px;
-    border-radius: 20px;
+    text-align: center;
+    /* border-radius: 20px; */
     font-size: large;
 }
 .formbox textarea{
@@ -129,7 +138,7 @@
     font-size: large;
     margin-bottom: 10px;
 
-    border-radius: 20px;
+    /* border-radius: 20px; */
 }
 .coloredfont{
     color: #9370DB;
@@ -142,7 +151,6 @@
 .regularfont{
     color: white;
     font-size: x-large;
-    /* text-align: center; */
     margin: 10px;
     padding: 10px; 
     background-color: #2e2e2e; 
@@ -169,7 +177,7 @@
     font-size: x-large;
     margin: 10px;
     padding: 10px; 
-    /* background-color: black;  */
+    background-color: black; 
     /* width: 70%; */
 }
 .lastsmallfont{
@@ -206,10 +214,16 @@
     align-items: center;
 }
 .title{
-    color: #9370DB;
+    color: white;
     text-align: center;
     margin: auto;
+    /* background-color: black;
+    padding: 10px; */
     /* height: 20px; */
+}
+.gif{
+    height: 600;
+    justify-content: center;
 }
 
 
@@ -219,11 +233,45 @@
     width: 100%;
 }
 .waitlistlogo{
-    height: 30%;
-    width: auto;
+    /* height: 40%; */
+    width: 40%;
+    justify-content: center;
 }
 
 .linkword{
     color: #9370DB;
     text-decoration: underline;
+}
+@media screen and (max-width: 768px) {
+.title{
+    font-size: larger;
+}
+
+.sections{
+    flex-direction: column;
+}
+.regularfont{
+    font-size: large;
+}
+.grayregularfont{
+    font-size: large;
+    
+}
+.footer{
+    background-color: #9370DB;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.footerlogo{
+    height: 30px;
+    align-self: center;
+}
+.cezswriting{
+    height: 30px;
+}
+.gif{
+    height: 400px;
+}
 }

@@ -4,27 +4,36 @@ import Logo from '../pics/cezslogo.png'
 // import { useNavigate } from "react-router-dom";
 // const history = useNavigate()
 const Last = ({history}) => {
+   
     // console.log(history)
     // const history = useNavigate()
     return(
         <div className="container">
-            <div>
+            <div className='logobox'>
+                <div style={{marginTop: 20}}>
+            <img className="logo" src={Logo} alt="logo"/>
+
+                </div>
+
             </div>
 
-            <div className="formbox">
-                <h4 className="lastFont">Let's make <span className='coloredfont'>instruments</span> cool again!</h4>
-                <h5 className="lastsmallfont">If you are interested in joining our community, join the <span className="linkword" onClick={() => history.push('/waitlist')}>waitlist</span>.</h5>
+            <div className="logobox">
+                <div>
+                <h1 className="title">Let's make <span className='coloredfont'>instruments</span> cool again!</h1>
+
+                </div>
+            </div>
+            <div className='logobox'>
+                <h2 className="title">If you are interested in joining our community, join the <span className="linkword" onClick={() => history.push('/waitlist')}>waitlist</span>.</h2>
+
             </div>
         
-            <div className='footer'>
-                
-                    <div style={{flexDirection: 'row', display: 'flex'}}>
-                        <img className="footerlogo" src={Logo} alt="logo"/>
-                        <h5 style={{alignSelf: 'center'}}>is a Registered trademark. All Rights reserved.</h5>
-                    </div>
-                    <div>
-                        <h5 style={{textAlign: 'right'}} onClick={() => history.push('/privacy')}>Privacy Policy</h5>
-                    </div>
+            <div className='logobox'>
+                        <div>
+                        <h5 className='coloredfont'>Registered trademark. All Rights reserved.</h5>
+                        <h5 className='coloredfont' onClick={() => history.push('/privacy')}>Privacy Policy</h5>
+
+                        </div>
 
             </div>
         </div>
