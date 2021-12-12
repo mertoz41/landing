@@ -6,6 +6,7 @@ import First from '../pics/first.gif'
 const What = ({handlePageChange, currentPage}) => {
     return(
         <div className="secondcontainer">
+
             <div className='sections'>
                 <div className="sectionside">
                     <div className="formbox">
@@ -20,10 +21,6 @@ const What = ({handlePageChange, currentPage}) => {
                             provides an exclusive network where users express themselves through music, discover others with similar taste, and pinpoint upcoming events.
 
                         </h3>
-                        {/* <h3 className="regularfont">
-                        Discover section allows users to pinpoint their upcoming gigs or auditions on the map. 
-
-                        </h3> */}
                     </div>
                 </div>
                 <div className="sectionside">
@@ -31,10 +28,11 @@ const What = ({handlePageChange, currentPage}) => {
                 </div>
         
             </div>
+
             <div className='nextpage' onClick={() => handlePageChange(currentPage + 1)}>
-                {/* <h3 className="introfont">problem</h3> */}
                 <BsFillCaretDownFill size='3em' className="downbutton"/>
             </div>
+            
         </div>
     )
 }

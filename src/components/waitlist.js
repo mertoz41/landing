@@ -29,11 +29,11 @@ class Waitlist extends Component{
         return(
             <div className="waitlistcontainer">
                 <div>
-                <div className='logobox'>
-                    <div style={{marginTop: 20, display: 'flex', justifyContent: 'center'}}>
-                        <img src={Logo} className='waitlistlogo' alt='logo' onClick={() => this.props.history.push('/')}/>
+                    <div className='logobox'>
+                        <div style={{marginTop: 20, display: 'flex', justifyContent: 'center'}}>
+                            <img src={Logo} className='waitlistlogo' alt='logo' onClick={() => this.props.history.push('/')}/>
                         </div>
-                </div>
+                    </div>
                     {this.state.joinedWaitlist ? 
                         <div className='logobox'>
                         <h3 className="coloredfont">You have joined the waitlist! Expect to hear from us soon!</h3>
@@ -59,10 +59,6 @@ class Waitlist extends Component{
                     }
                     </div>
                 
-
-               
-                
-      
             </div>
         )
     }
