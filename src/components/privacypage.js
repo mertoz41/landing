@@ -59,7 +59,7 @@ class PrivacyPage extends Component{
                             These changes are effective immediately after they are posted on this page.
                         </p>
                         <h2 className="privacytitle">Contact Us</h2>
-                        <p className="privacywritings">If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at mertozka41@gmail.com.</p>
+                        <p className="privacywritings">If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at support@cezsmusic.com.</p>
                     </div>
                 </div>
                 
