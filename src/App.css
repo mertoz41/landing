@@ -131,6 +131,10 @@
     /* border-radius: 20px; */
     font-size: large;
 }
+.formbox input::placeholder{
+    color: black;
+}
+
 .formbox textarea{
     background-color: darkgray;
     border: 0px ;
@@ -139,6 +143,9 @@
     margin-bottom: 10px;
 
     /* border-radius: 20px; */
+}
+.formbox textarea::placeholder{
+    color: black;
 }
 .coloredfont{
     color: #9370DB;
