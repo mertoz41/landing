@@ -13,7 +13,6 @@
     height: 100vh;
     width: 100vw;
     background-color: #2e2e2e;
-    /* justify-content: space-between; */
     display: flex;
     flex-direction: column;
 }
@@ -128,7 +127,7 @@
     padding: 15px;
     margin-bottom: 20px;
     text-align: center;
-    /* border-radius: 20px; */
+    border-radius: 15px;
     font-size: large;
 }
 .formbox input::placeholder{
@@ -142,7 +141,11 @@
     font-size: large;
     margin-bottom: 10px;
 
-    /* border-radius: 20px; */
+    border-radius: 15px;
+}
+.formbox input[type=submit]{
+    background-color: #9370DB;
+    cursor: pointer;
 }
 .formbox textarea::placeholder{
     color: black;
@@ -194,18 +197,15 @@
     padding: 10px; 
     /* background-color: black */
 }
-.waitlistbutton{
+.waitlistButton{
     background-color: #9370DB;
-    /* border-radius: 20px; */
+    border-radius: 15px;
+    display: inline-block;
+    padding: 15px;
+    cursor: pointer;
 
-    padding-left: 10px;
-    padding-right: 10px;
-    align-items: center;
 }
-.waitlistbutton h3{
-    text-align: center;
-    color: white;
-}
+
 .downbutton{
     /* position: relative;
     right: 20px; */
@@ -236,8 +236,9 @@
 
 
 .logo{
-    height: 100%;
-    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+    /* width: 70%; */
 }
 .waitlistlogo{
     /* height: 40%; */
@@ -250,6 +251,9 @@
     text-decoration: underline;
 }
 @media screen and (max-width: 768px) {
+    .logo{
+        height: 90px;
+    }
 .title{
     font-size: larger;
 }

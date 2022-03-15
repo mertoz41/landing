@@ -25,9 +25,9 @@ class FullScreen extends Component{
     render(){
         return(
             <div className='container'>
-              
+              <First />
 
-                <ReactPageScroller
+                {/* <ReactPageScroller
                 pageOnChange={this.handlePageChange}
                 onBeforePageScroll={this.handleBeforePageChange}
                 customPageNumber={this.state.currentPage}
@@ -37,7 +37,7 @@ class FullScreen extends Component{
                     <Why handlePageChange={this.handlePageChange} currentPage={this.state.currentPage}/>
                     <How handlePageChange={this.handlePageChange} currentPage={this.state.currentPage}/>
                     <Last/>
-                </ReactPageScroller>
+                </ReactPageScroller> */}
                 
             </div>
         )

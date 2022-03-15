@@ -1,40 +1,43 @@
-import React,{Component} from 'react'
+import React,{useState, useRef} from 'react'
 import '../App.css'
 import Logo from '../pics/cezslogo.png'
 import { withRouter } from "react-router-dom";
 import validator from 'validator'
 import emailjs from 'emailjs-com'
+import {animated, useSpring} from 'react-spring'
+
+const Waitlist = ({history}) => {
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [about, setAbout] = useState('');
+    const [joinedWaitlist, setJoinedWaitlist] = useState(false)
+    const form = useRef(null)
+    const animation = useSpring({to: {opacity: 1}, from: {opacity: 0}})
 
 
-class Waitlist extends Component{
-    constructor(props){
-        super(props);
-        this.state = {name: '', email: '', about: '', joinedWaitlist: false};
-        this.form = React.createRef()
-    }
-    checkAttempt = e => {
+    const checkAttempt = e => {
         e.preventDefault()
-        if (!this.state.name.length){
+        if (!name.length){
             alert('invalid name.')
-        } else if (!validator.isEmail(this.state.email)){
+        } else if (!validator.isEmail(email)){
             alert('invalid email')
-        } else if (!this.state.about.length){
+        } else if (!about.length){
             alert('invalid about')
         } else {
-            emailjs.sendForm('service_kxdorjg', 'template_p1l3wiv', this.form.current, 'user_MChuPfMmdUh7yV5A7XgUn')
-            this.setState({joinedWaitlist: true})
+            emailjs.sendForm('service_kxdorjg', 'template_p1l3wiv', form.current, 'user_MChuPfMmdUh7yV5A7XgUn')
+            setJoinedWaitlist(true)
         }
     }
-    render(){
         return(
-            <div className="waitlistcontainer">
-                <div>
+            <animated.div style={animation}>
+                <div className="waitlistcontainer">
                     <div className='logobox'>
-                        <div style={{marginTop: 20, display: 'flex', justifyContent: 'center'}}>
-                            <img src={Logo} className='waitlistlogo' alt='logo' onClick={() => this.props.history.push('/')}/>
+                        <div>
+                            <img src={Logo} className='logo' alt='logo' onClick={() => history.push('/')}/>
+
                         </div>
                     </div>
-                    {this.state.joinedWaitlist ? 
+                    {joinedWaitlist ? 
                         <div className='logobox'>
                         <h3 className="coloredfont">You have joined the waitlist! Expect to hear from us soon!</h3>
                         <div>
@@ -43,25 +46,25 @@ class Waitlist extends Component{
                     : 
                     <div>
                         <h1 className="coloredfont">Join waitlist</h1>
-                    <form ref={this.form} onSubmit={e => this.checkAttempt(e)} className="formbox">
-                        <div>
-                            <input type="text" name="name" placeholder="Your name" value={this.state.name} onChange={text=> this.setState({name: text.target.value})}/>
-                        </div>
-                        <div>
-                        <input type="email" name="email" placeholder="Your email" value={this.state.email} onChange={text=> this.setState({email: text.target.value})}/>
+                        <form ref={form} onSubmit={e => checkAttempt(e)} className="formbox">
+                            <div>
+                                <input type="text" name="name" placeholder="Your name" value={name} onChange={e=> setName(e.target.value)}/>
                             </div>
                             <div>
-                        <textarea name="about" placeholder="Tell us about you" value={this.state.about} onChange={text=> this.setState({about: text.target.value})}/>
+                                <input type="email" name="email" placeholder="Your email" value={email} onChange={e=> setEmail(e.target.value)}/>
                             </div>
-                        <input type="submit" value="Join"/>
-                    </form>
+                            <div>
+                                <textarea name="about" placeholder="Tell us about you" value={about} onChange={e=> setAbout(e.target.value)}/>
+                            </div>
+                            <input type="submit" value="Join"/>
+                        </form>
                     </div>
                     }
-                    </div>
                 
             </div>
+        </animated.div>
         )
     }
-}
+
 
 export default withRouter(Waitlist)
