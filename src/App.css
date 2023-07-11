@@ -42,6 +42,9 @@
     justify-content: center;
     width: 100vw;
 }
+.privacycontainer p {
+    color: "white"
+}
 .logobox{
     display: flex;
     justify-content: center;
@@ -86,7 +89,12 @@
     /* margin: 50% */
     
     /* background-color: rosybrown; */
+    
 }
+.privacybox h1{
+    color: 'white'
+}
+
 .privacytitle{
     color: #9370DB;
 }
