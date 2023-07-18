@@ -10,14 +10,10 @@ const Help = () => {
 
   return (
     <animated.div style={animation}>
-      <div className="container">
-        <div className="logobox">
-          <div>
-            <img src={Logo} className="logo" alt="logo" />
-            <h1 className="coloredfont">Get in touch</h1>
-            <h2 className="title">support@cezsmusic.com</h2>
-          </div>
-        </div>
+      <div className="helpContainer">
+        <img src={Logo} className="logo" alt="logo" />
+        <h1 className="coloredfont">Get in touch</h1>
+        <h2 className="title">support@cezsmusic.com</h2>
       </div>
     </animated.div>
   );

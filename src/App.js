@@ -1,11 +1,10 @@
 import "./App.css";
-import FullScreen from "./fullScreen";
 import PrivacyPage from "./components/privacypage";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Waitlist from "./components/waitlist";
 import { Helmet } from "react-helmet";
 import React from "react";
 import Help from "./components/Help";
+import First from "./components/first";
 // import 'semantic-ui-css/semantic.min.css'
 
 function App() {
@@ -19,9 +18,7 @@ function App() {
       </Helmet>
       <Router>
         <Switch>
-          <Route exact path="/" render={() => <FullScreen />} />
-
-          <Route exact path="/waitlist" render={() => <Waitlist />} />
+          <Route exact path="/" render={() => <First />} />
           <Route exact path="/privacy" render={() => <PrivacyPage />} />
           <Route exact path="/help" render={() => <Help />} />
         </Switch>

@@ -1,296 +1,87 @@
-.first{
-    background-color: red;
-}
-.container{
-    height: 100vh;
-    width: 100vw;
-    background-color: #2e2e2e;
-    justify-content: space-between;
-    display: flex;
-    flex-direction: column;
-}
-.waitlistcontainer{
-    height: 100vh;
-    width: 100vw;
-    background-color: #2e2e2e;
-    display: flex;
-    flex-direction: column;
-}
-.alternateContainer{
-    height: 100vh;
-    width: 100vw;
-    background-color: #2e2e2e;
-    justify-content: space-around;
-    display: flex;
-    flex-direction: column;
-}
-.secondcontainer{
-    height: 100vh;
-    width: 100vw;
-    background-color: black;
-    justify-content: space-between;
-    display: flex;
-    flex-direction: column;
-}
-.sectionTitle{
-    background-color: #9370DB;
-
-}
-.privacycontainer{
-    height: auto;
-    background-color: #2e2e2e;
-    justify-content: center;
-    width: 100vw;
-}
-.privacycontainer p {
-    color: "white"
-}
-.logobox{
-    display: flex;
-    justify-content: center;
-    
-}
-.buttonbox{
-  display: flex;
-  justify-content: center;
-}
-
-
-
-
-.sectionside{
-    flex: 1;
-    /* background-color: red; */
-    justify-content: center;
-    display: flex;
-    /* background-color: black; */
-    align-items: center;
-    
-}
-.sections{
-    display: flex;
-    flex: 1;
-    flex-direction: row;
-}
-
-
-
-
-
-
-
-
-
-
-.privacybox{
-    height: auto;
-    width: 80%;
-    padding: 10px;
-    /* margin: 50% */
-    
-    /* background-color: rosybrown; */
-    
-}
-.privacybox h1{
-    color: 'white'
-}
-
-.privacytitle{
-    color: #9370DB;
-}
-.privacywritings{
-    color: white
-}
-.footer{
-    background-color: #9370DB;
-    display: flex;
-    justify-content: space-between;
-    padding-left: 30px;
-    padding-right: 30px;
-}
-.footer div{
-    flex: 1;
-    /* background-color: yellow; */
-    /* text-align: center; */
-}
-.footer h5{
-    color: #9370DB;
-}
-.footerlogo{
-    height: 40px;
-    align-self: center;
-}
-.formbox{
-    height: auto;
-    width: 100%;
+.container {
+  width: 100vw;
+  background-color: #2e2e2e;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-    /* background-color: black; */
+  padding-bottom: 15px;
+  overflow-y: auto;
 }
-.formbox input{
-    background-color: darkgray;
-    border: 0px ;
-    padding: 15px;
-    margin-bottom: 20px;
-    text-align: center;
-    border-radius: 15px;
-    font-size: large;
+.description {
+  color: white;
+  text-align: left;
+  margin: auto;
+  font-weight: 400;
+  width: 50%;
 }
-.formbox input::placeholder{
-    color: black;
+.screenShot {
+  height: 370px;
+  width: 170px;
+  align-self: center;
+  border-radius: 10px;
+  border: 2px solid #262626;
 }
-
-.formbox textarea{
-    background-color: darkgray;
-    border: 0px ;
-    padding: 15px;
-    font-size: large;
-    margin-bottom: 10px;
-
-    border-radius: 15px;
-}
-.formbox input[type=submit]{
-    background-color: #9370DB;
-    cursor: pointer;
-}
-.formbox textarea::placeholder{
-    color: black;
-}
-.coloredfont{
-    color: #9370DB;
-    text-align: center;
-}
-.cezswriting{
-    height: 50px;
-    margin-right: 5px;
-}
-.regularfont{
-    color: white;
-    font-size: x-large;
-    margin: 10px;
-    padding: 10px; 
-    background-color: #2e2e2e; 
-    width: 70%;
-}
-.introfont{
-    color: white;
-    /* font-size: x-large; */
-    margin: 10px;
-    padding: 10px; 
-    background-color: #2e2e2e; 
-    /* width: 70%; */
-}
-.grayregularfont{
-    color: white;
-    font-size: x-large;
-    margin: 10px;
-    padding: 10px; 
-    background-color: black; 
-    width: 70%;
-}
-.lastFont{
-    color: white;
-    font-size: x-large;
-    margin: 10px;
-    padding: 10px; 
-    background-color: black; 
-    /* width: 70%; */
-}
-.lastsmallfont{
-    color: white;
-    font-size: large;
-    margin: 10px;
-    padding: 10px; 
-    /* background-color: black */
-}
-.waitlistButton{
-    background-color: #9370DB;
-    border-radius: 15px;
-    display: inline-block;
-    padding: 15px;
-    cursor: pointer;
-
+.ssContainer {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  align-self: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
-.downbutton{
-    /* position: relative;
-    right: 20px; */
-    color: #9370DB;
-    
-    /* top: 80px; */
-    /* bottom: 290px */
-}
-.nextpage{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-.title{
-    color: white;
-    text-align: center;
-    margin: auto;
-    /* background-color: black;
-    padding: 10px; */
-    /* height: 20px; */
-}
-.gif{
-    height: 600;
-    justify-content: center;
+.helpContainer {
+  height: 100vh;
+  width: 100vw;
+  background-color: #2e2e2e;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
 }
 
-
-
-.logo{
-    height: 200px;
-    margin-top: 20px;
-    /* width: 70%; */
+.privacybox {
+  height: auto;
+  width: 80%;
+  align-self: center;
+  padding: 10px;
 }
-.waitlistlogo{
-    /* height: 40%; */
-    width: 40%;
-    justify-content: center;
+.privacybox h1 {
+  color: "white";
 }
 
-.linkword{
-    color: #9370DB;
-    text-decoration: underline;
+.privacywritings {
+  color: white;
+}
+
+.coloredfont {
+  color: #9370db;
+  text-align: center;
+  font-weight: 400;
+}
+
+.title {
+  color: white;
+  text-align: center;
+  font-weight: 400;
+}
+
+.logo {
+  margin-top: 20px;
+  align-self: center;
+  height: 90px;
 }
 @media screen and (max-width: 768px) {
-    .logo{
-        height: 90px;
-    }
-.title{
+  .title {
     font-size: larger;
-}
-
-.sections{
-    flex-direction: column;
-}
-.regularfont{
-    font-size: large;
-}
-.grayregularfont{
-    font-size: large;
-    
-}
-.footer{
-    background-color: #9370DB;
-    display: flex;
-    justify-content: space-between;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-.footerlogo{
-    height: 30px;
-    align-self: center;
-}
-.cezswriting{
-    height: 30px;
-}
-.gif{
-    height: 400px;
-}
+  }
+  .description {
+    width: 90%;
+  }
+  .screenShot {
+    height: 320px;
+    width: 130px;
+  }
+  .ssContainer {
+    width: 90%;
+  }
 }
